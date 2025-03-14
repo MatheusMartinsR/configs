@@ -7,4 +7,4 @@ This settins will have:
 - i3 configuration;
 - polybar configuration;
 - alacritty configuration; 
-- tmux will be added soon;
+
