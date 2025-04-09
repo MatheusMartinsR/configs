@@ -12,6 +12,8 @@ vim.api.nvim_create_autocmd("VimEnter", {
 		vim.cmd("highlight Text guibg=NONE ctermbg=NONE")
 		vim.cmd("highlight SignColumn guibg=NONE ctermbg=NONE")
 		vim.cmd("highlight NonText guibg=NONE ctermbg=NONE")
+		vim.cmd("highlight NvimTreeWinSeparator guibg=none guifg=none")
+		vim.cmd("highlight NvimTreeNormal guibg=none guifg=none")
 	end,
 })
 
@@ -59,15 +61,4 @@ opt.splitbelow = true -- split horizontal window to the bottom
 opt.swapfile = false
 
 -- block cursor for all modes
-opt.guicursor = "n-v-i-c:block-Cursor"
-
-vim.api.nvim_create_autocmd("VimEnter", {
-	callback = function()
-		vim.cmd("highlight Normal guibg=NONE ctermbg=NONE")
-		vim.cmd("highlight LineNr guibg=NONE ctermbg=NONE")
-		vim.cmd("highlight CursorLineNR guibg=NONE ctermbg=NONE")
-		vim.cmd("highlight Text guibg=NONE ctermbg=NONE")
-		vim.cmd("highlight SignColumn guibg=NONE ctermbg=NONE")
-		vim.cmd("highlight NonText guibg=NONE ctermbg=NONE")
-	end,
-})
+-- opt.guicursor = "n-v-i-c:block-Cursor"
