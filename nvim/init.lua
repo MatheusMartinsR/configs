@@ -1,2 +1,2 @@
-require("matheus.core")
-require("matheus.lazy")
+require("juca.core")
+require("juca.lazy")
